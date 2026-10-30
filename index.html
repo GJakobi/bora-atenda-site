@@ -4,13 +4,253 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Atenda Tech</title>
-<link rel="stylesheet" href="assets/site.css">
+<title>Bora abrir? · Ebook + 22 prompts</title>
+<meta name="description" content="O passo a passo real do @abrindoascoisas, do tema ao vídeo agendado: roteiro, checagem de fatos, voz, legenda, 3D estilo maquete, música e post.">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1760798091666760');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1760798091666760&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+@font-face{font-family:"Nunito";src:url(fonts/Nunito-Regular.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:"Nunito";src:url(fonts/Nunito-Bold.ttf);font-weight:700;font-display:swap}
+@font-face{font-family:"Nunito";src:url(fonts/Nunito-ExtraBold.ttf);font-weight:800;font-display:swap}
+@font-face{font-family:"Grotesk";src:url(fonts/SpaceGrotesk-Bold.ttf);font-weight:700;font-display:swap}
+:root{--navy:#16213E;--yellow:#FFC531;--cream:#F5EFE6;--ink:#1F2636;--muted:#5D6678;--green:#21A06A;--coral:#E4573D;--line:#E6DCCB}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:#FBF8F2}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:"Nunito",sans-serif;font-weight:800;line-height:1.2;margin:0 0 14px;color:var(--navy)}
+h1{font-size:30px;color:#fff;letter-spacing:-.3px}
+h2{font-size:24px;padding-left:12px;border-left:5px solid var(--yellow)}
+h3{font-size:22px}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin:0 0 10px}
+strong{font-weight:800}
+.draft-banner{background:var(--coral);color:#fff;text-align:center;font:700 13px/1.4 "Grotesk",sans-serif;padding:8px 12px;letter-spacing:.3px}
+.draft-note{display:block;background:#FFF6D6;border:2px dashed #E0A800;color:#5A4500;font:700 13px/1.45 "Grotesk",ui-monospace,monospace;padding:8px 10px;border-radius:8px;margin:10px 0}
+/* hero */
+.hero{background:var(--navy);color:#DCE3F2;padding:28px 0 36px;border:0}
+.kicker{font:700 13px/1.4 "Grotesk",sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:var(--yellow);margin-bottom:12px}
+.hero .sub{font-size:17px;color:#DCE3F2}
+.hero img{margin:22px auto 0;border-radius:14px}
+/* buttons */
+.cta{display:block;text-align:center;background:var(--yellow);color:var(--navy);font:800 18px/1.25 "Nunito",sans-serif;text-decoration:none;padding:18px 16px;border-radius:14px;box-shadow:0 6px 0 #C99400;margin:20px 0 10px;text-transform:uppercase;letter-spacing:.2px}
+.cta:active{transform:translateY(3px);box-shadow:0 3px 0 #C99400}
+.cta-small{display:block;text-align:center;font-size:14px;color:var(--muted)}
+.hero .cta-small{color:#AFC0E0}
+.btn-ghost{display:block;text-align:center;border:2px solid var(--navy);color:var(--navy);font-weight:800;text-decoration:none;padding:14px;border-radius:12px;margin:18px 0 0}
+/* blocks */
+blockquote{margin:16px 0;padding:14px 16px;background:#fff;border-left:5px solid var(--navy);border-radius:0 10px 10px 0;font-size:15.5px;color:var(--muted)}
+.two{display:grid;gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 6px}
+.card.yes h3{color:var(--green)} .card.no h3{color:var(--coral)}
+.card h3{font-size:20px}
+.chapters{list-style:none;padding:0;counter-reset:c}
+.chapters li{counter-increment:c;position:relative;padding:12px 12px 12px 54px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.chapters li::before{content:counter(c);position:absolute;left:12px;top:10px;width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--yellow);font:700 15px/30px "Grotesk",sans-serif;text-align:center}
+.chapters em{color:var(--muted);font-style:normal;font-size:14px}
+.guarantee{background:var(--cream)}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:0 0 10px;padding:0 16px}
+.faq summary{cursor:pointer;font-weight:800;padding:14px 0;list-style:none;color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;font-weight:800}
+.faq details[open] summary::after{content:"–"}
+.final{background:var(--navy);border:0}
+.final h3{color:#fff;font-size:24px}
+.final .cta-small{color:#AFC0E0}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;font-size:14px;color:var(--muted);text-align:center}
+footer p{margin:0 0 6px}footer a{color:var(--muted);text-decoration-thickness:1px;text-underline-offset:2px}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.thumbs img{border-radius:10px}
+@media (min-width:760px){h1{font-size:40px}.two{grid-template-columns:1fr 1fr}section{padding:60px 0}}
+</style>
 </head>
 <body>
-<main class="wrap">
-<div class="soon">Em breve.</div>
-<footer><p>Atenda Tech · CNPJ 68.392.339/0001-14 · <a href="mailto:contato@atenda.tech">contato@atenda.tech</a></p><p><a href="termos/">Termos de uso</a> · <a href="privacidade/">Política de privacidade</a></p></footer>
-</main>
+
+
+<!-- Dobra 1 -->
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">Ebook + 22 prompts prontos · Claude ou ChatGPT (dá no plano grátis)</div>
+   
+    <h1>Aprenda a fazer vídeos 3D que explicam como as coisas funcionam, em 1 minuto e com IA</h1>
+    <p class="sub">O passo a passo real do @abrindoascoisas, do tema ao vídeo agendado: roteiro, checagem de fatos, voz, legenda, 3D estilo maquete, música e post. Você não precisa saber programar. A IA escreve o código por você.</p>
+    <a class="cta" href="https://pay.kiwify.com.br/J2gz8uM" data-checkout>Quero meu primeiro vídeo · R$&nbsp;37 na semana de lançamento</a>
+    <span class="cta-small">Depois, R$&nbsp;47 · Garantia de 7 dias · Acesso pela Kiwify</span>
+    <img src="img/cover-phones.jpg" width="1500" height="928" alt="Capas dos vídeos do micro-ondas, do carro flex e de Itaipu, feitos com esse processo">
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Isso não é curso de "viralizar"</h2>
+    <p>É um passo a passo de <strong>produção</strong>. Não prometo views, seguidores nem renda. Prometo o processo que eu uso todo dia, explicado de um jeito que você consegue repetir.</p>
+    <blockquote>Vídeos nesse formato já passam de 30 milhões de views. Só os oito mais vistos de um canal que usa a mesma estrutura somam mais de 26 milhões no YouTube, todos publicados em outubro de 2026 (verificado em 30/10/2026). São números de outros vídeos, não promessa.</blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div class="card yes">
+      <h3>Pra quem é</h3>
+      <ul>
+        <li>Você quer um perfil de curiosidades, ciência ou "como funciona" e não sabe por onde começar.</li>
+        <li>Você gosta desses vídeos 3D de maquete e quer entender como são feitos.</li>
+        <li>Você topa usar o computador e seguir instruções, mesmo sem nunca ter programado.</li>
+        <li>Você quer gastar R$&nbsp;0 em ferramenta, ou no máximo ~US$&nbsp;6 por mês.</li>
+        <li>Você quer postar coisa certa: fato com fonte.</li>
+      </ul>
+    </div>
+    <div class="card no">
+      <h3>Pra quem não é</h3>
+      <ul>
+        <li>Quem procura promessa de seguidores, views ou dinheiro.</li>
+        <li>Quem quer fazer tudo <strong>só pelo celular</strong>. Precisa de computador (Windows, Mac ou Linux) pra renderizar.</li>
+        <li>Quem quer um botão mágico. Nas primeiras vezes, montar o "molde" do 3D (cap. 7) pede paciência.</li>
+        <li>Quem quer código ou template pronto pra copiar. Aqui a IA gera o <strong>seu</strong> código.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que tem dentro: 12 capítulos, cada um termina com prompts prontos</h2>
+    <p>Cada capítulo usa como exemplo um vídeo que já foi ao ar: micro-ondas, carro flex e Itaipu.</p>
+    <div class="thumbs">
+      <img src="img/cover-micro.jpg" width="560" height="700" alt="Vídeo: Bora abrir um micro-ondas?" loading="lazy">
+      <img src="img/cover-carro.jpg" width="560" height="700" alt="Vídeo: Bora abrir um carro flex?" loading="lazy">
+      <img src="img/cover-itaipu.jpg" width="560" height="700" alt="Vídeo: Como uma roda d'água vira Itaipu" loading="lazy">
+    </div>
+    <ol class="chapters" style="margin-top:22px">
+      <li><strong>O formato por dentro.</strong> Por que o vídeo prende: estrutura, ritmo, o "isso não é X, é Y", o fechamento fixo. <em>(P1)</em></li>
+      <li><strong>Achar o tema.</strong> Filtros pra escolher: conceito do dia a dia, fato surpreendente, tem fonte. <em>(P2, P3)</em></li>
+      <li><strong>Roteiro: comece ingênuo, conserte um problema por vez.</strong> Beats de narração, visual e texto na tela, 140 a 170 palavras, linguagem falada. Traz um roteiro completo de exemplo. <em>(P4, P5)</em></li>
+      <li><strong>Checar os fatos.</strong> Só entra número com fonte aberta, o que cortar, como tratar tema sensível. <em>(P6, P7)</em></li>
+      <li><strong>A voz.</strong> Escolher a voz com um teste de uma frase, ajustar a velocidade pra caber em ~60 s, consertar só a frase errada. Tem opção grátis e opção ElevenLabs. <em>(P8, P9)</em></li>
+      <li><strong>Legenda palavra por palavra.</strong> Timestamps da voz, blocos de 1 a 3 palavras, zonas seguras do Reels. <em>(P10)</em></li>
+      <li><strong>O 3D estilo maquete (Remotion + Three.js).</strong> Paleta, materiais, "cada conserto ganha um movimento de câmera". A IA escreve as cenas por você. <em>(P11, P12, P13)</em></li>
+      <li><strong>Música sem dor de cabeça.</strong> Bibliotecas grátis, o que a licença proíbe, voz na frente e música baixa. <em>(P14, P15)</em></li>
+      <li><strong>Montar e renderizar.</strong> Juntar vídeo, voz e música e exportar em 1080x1920. <em>(P16)</em></li>
+      <li><strong>Checagem antes de postar.</strong> Frames por beat, zonas seguras, transcrição do áudio final comparada com o roteiro, volume. <em>(P17, P18)</em></li>
+      <li><strong>Capa, legenda e post.</strong> Capa com o objeto aberto, primeira linha forte, CTA, horário, agendamento. <em>(P19, P20)</em></li>
+      <li><strong>Rotina com agentes.</strong> Sua "equipe" de IA: um agente Roteirista e um agente Estúdio, fila de roteiros e aprovação antes de publicar. <em>(P21, P22)</em></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Bônus</h2>
+    <ul>
+      <li><strong>Modo Agente:</strong> um arquivo só com o livro inteiro preparado pra IA. Você sobe no Claude ou no ChatGPT (num Projeto), escreve "Bora começar" e ela te guia etapa por etapa, do tema ao vídeo agendado. Funciona nos planos grátis.</li>
+      <li><strong>Pacote de prompts:</strong> os 22 prompts em .md e .txt, um arquivo por capítulo, com espaços tipo <code>[TEMA]</code> pra preencher.</li>
+      <li><strong>Modelo de roteiro</strong> + um roteiro de exemplo completo.</li>
+      <li><strong>Planilha de pauta e calendário</strong> (.csv).</li>
+      <li><strong>Checklist de QA</strong> e <strong>checklist de roteiro e post</strong>.</li>
+      <li><strong>Registro de licença de música</strong> (.csv), pra saber de onde veio cada faixa.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que você precisa (sem letra miúda)</h2>
+    <ul>
+      <li><strong>Computador</strong> com Windows, Mac ou Linux que rode Node.js. Pelo celular não dá.</li>
+      <li><strong>Conta grátis</strong> no ChatGPT ou no Claude.</li>
+      <li><strong>Abrir o terminal</strong> e colar comandos. Não precisa saber programar: o livro mostra cada passo, e a IA escreve o código.</li>
+      <li><strong>Paciência na primeira vez</strong>, pra montar o molde do 3D (cap. 7). Depois do molde, cada episódio leva algumas horas. <em>(É estimativa, não medição.)</em></li>
+      <li><strong>Duas trilhas de custo:</strong>
+        <ul style="margin-top:8px">
+          <li><strong>Trilha R$&nbsp;0:</strong> voz grátis (Gemini TTS ou Kokoro), legenda com Whisper, música do Mixkit ou do Pixabay, Remotion + Three.js + ffmpeg, agendamento no próprio Instagram.</li>
+          <li><strong>Trilha ~US$&nbsp;6/mês:</strong> a mesma coisa, com a voz no ElevenLabs Starter (o plano grátis do ElevenLabs não permite uso comercial).</li>
+        </ul>
+      </li>
+      <li>O Remotion é grátis pra pessoa física e empresa pequena. A licença fica no seu nome (o livro explica).</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como você recebe</h2>
+    <ul>
+      <li>Pagou, recebe o <strong>PDF de 47 páginas</strong> na hora, pela área de membros da Kiwify.</li>
+      <li>O bônus <strong>Modo Agente</strong> também chega na hora.</li>
+      <li>Os 22 prompts já vêm no PDF, no fim de cada capítulo. O <strong>pacote de prompts e modelos</strong> (os mesmos prompts em arquivos .md e .txt, mais os modelos) é liberado no <strong>8º dia</strong> depois da compra, na mesma área de membros.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="guarantee">
+  <div class="wrap">
+    <h2>Garantia de 7 dias</h2>
+    <p>Leu, testou e não era pra você? Dentro de 7 dias você pede o reembolso direto pela Kiwify e recebe 100% de volta. Não precisa explicar o motivo.</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso saber programar?</summary><p>Não. Você vai abrir o terminal e colar o que a IA escrever. O livro mostra cada passo, e o capítulo 7 ensina a pedir e corrigir as cenas 3D.</p></details>
+    <details><summary>Dá pra fazer pelo celular?</summary><p>Não. A renderização roda no computador (Windows, Mac ou Linux).</p></details>
+    <details open><summary>Preciso pagar ChatGPT ou Claude?</summary><p>Não. Tudo foi pensado pra funcionar no plano grátis.</p></details>
+    <details><summary>Quanto vou gastar com ferramentas?</summary><p>R$&nbsp;0 na trilha grátis, ou ~US$&nbsp;6/mês se quiser a voz do ElevenLabs.</p></details>
+    <details><summary>Vem código ou template pronto?</summary><p>Não. A IA gera o código do seu projeto, a partir dos prompts do capítulo 7. Assim o vídeo fica com a sua cara, e você entende o que está rodando.</p></details>
+    <details><summary>Vou viralizar? Vou ganhar dinheiro?</summary><p>Não dá pra prometer isso, e desconfie de quem promete. O livro ensina a produzir bem e com fatos certos. O alcance depende de tema, constância e de coisas que ninguém controla.</p></details>
+    <details><summary>Quanto tempo leva um vídeo?</summary><p>O primeiro demora mais, por causa do molde do 3D. Depois, algumas horas por episódio (estimativa).</p></details>
+    <details open><summary>Os vídeos de exemplo são de verdade?</summary><p>São. Micro-ondas, carro flex e Itaipu foram feitos com esse processo para o @abrindoascoisas.</p></details>
+    <details><summary>Posso usar a música que eu quiser?</summary><p>O capítulo 8 mostra onde achar música grátis, como ler a licença e como guardar o registro de cada faixa.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Garantia de 7 dias pela Kiwify, sem precisar dizer o motivo.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h3>Seu primeiro vídeo que explica o mundo em 1 minuto começa no capítulo 1.</h3>
+    <a class="cta" href="https://pay.kiwify.com.br/J2gz8uM" data-checkout>Quero o ebook + 22 prompts · R$&nbsp;37 no lançamento</a>
+    <span class="cta-small">Depois, R$&nbsp;47 · Garantia de 7 dias · Computador + IA grátis bastam</span>
+   
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Atenda Tech · CNPJ 68.392.339/0001-14 · <a href="mailto:contato@atenda.tech">contato@atenda.tech</a></p>
+    <p><a href="/termos/">Termos de uso</a> · <a href="/privacidade/">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+/* Repassa UTMs + src/sck da URL da página para os botões de checkout (Kiwify aceita esses parâmetros)
+   e dispara InitiateCheckout no pixel ao clicar em qualquer botão de compra. */
+(function(){
+  var keep=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","src","sck"];
+  var here=new URLSearchParams(location.search);
+  document.querySelectorAll("a[data-checkout]").forEach(function(a){
+    var u=new URL(a.href);
+    keep.forEach(function(k){ var v=here.get(k); if(v) u.searchParams.set(k,v); });
+    a.href=u.toString();
+    a.addEventListener("click",function(){ if(window.fbq) fbq("track","InitiateCheckout"); });
+  });
+})();
+</script>
 </body>
 </html>
